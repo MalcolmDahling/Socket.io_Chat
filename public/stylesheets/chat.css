@@ -1,0 +1,76 @@
+@media only screen and (max-width:999px){
+    main{
+        width:100%
+    }
+}
+
+
+@media only screen and (min-width:1000px){
+    main{
+        width:50%;
+        margin:auto;
+    }
+}
+
+
+
+
+
+
+body{
+    background-color:rgb(102, 170, 202);
+    font-family: 'Rubik', sans-serif;
+}
+
+h1{
+    text-align:center;
+    font-size:24px;
+}
+
+
+#chat{
+    height:200px;
+    margin-bottom:10px;
+    padding:10px;
+    overflow-wrap:break-word;
+    overflow-y:scroll;
+
+    border-radius:10px;
+    background-color:rgb(206, 225, 233);
+}
+
+
+#chat p{
+    padding:0px;
+    margin:0px;
+}
+
+input[type=text]{
+    width:100%;
+    height:40px;
+    margin-bottom:10px;
+
+    border:none;
+    border-radius:10px;
+    padding-left:10px;
+    background-color:rgb(206, 225, 233);
+}
+
+input[type=submit]{
+    width:100%;
+    height:40px;
+
+    border:none;
+    border-radius:10px;
+    background-color:rgb(206, 225, 233);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+input:hover{
+    background-color:rgb(255, 255, 255);
+}
+
+input[type=submit]:hover{
+    cursor:pointer;
+}

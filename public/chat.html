@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Socket.io Chat</title>
+    <link rel="stylesheet" href="/stylesheets/chat.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <script src="../socket.io/socket.io.js" defer></script>
+    <script src="../javascripts/chat.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <h1 id="title"></h1>
+
+        <div id="chat"></div>   
+
+        <form id="form">
+            <input id="input" type="text" placeholder="Message">
+            <input id="send" type="submit" value="Send">
+        </form>
+
+    </main>
+
+</body>
+</html>
