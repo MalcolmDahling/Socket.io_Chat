@@ -11,12 +11,7 @@ form.addEventListener('submit', (e) => {
 
     if(username.value != '' && chatroom.value != ''){
 
-        let user = {
-            username: username.value,
-            chatroom: chatroom.value
-        };
-    
-        localStorage.setItem('user', JSON.stringify(user));
+        localStorage.setItem('username', JSON.stringify(username.value));
     
         window.location.href = window.location.href + 'chat/' + chatroom.value;
     }
