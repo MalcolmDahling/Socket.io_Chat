@@ -7,7 +7,7 @@ input = document.getElementById('input');
 let room = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
 
 
-document.getElementById('title').innerHTML = 'You are currently chatting in room: ' + room;
+document.getElementById('title').innerHTML = 'You are currently chatting in room: ' + decodeURIComponent(room);
 
 let username = JSON.parse(localStorage.getItem('username'));
 

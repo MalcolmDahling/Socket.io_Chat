@@ -1,0 +1,101 @@
+//mobile
+@media only screen and (max-width:999px){
+
+    body{
+        font-size:3rem;
+
+        main{
+            width:75%;
+
+            form{
+
+                input{
+                    height:100px;
+                    font-size:3rem;
+                }
+
+                input::placeholder{
+                    
+                    font-size:3rem;
+                }
+
+                input[type=submit]{
+                    margin-top:53px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+//desktop
+@media only screen and (min-width:1000px){
+    main{
+        width:50%;
+
+        form{
+
+            input{
+                height:40px;
+            }
+
+            input[type=submit]{
+                margin-top:20px;
+            }
+        }
+    }
+}
+
+
+
+
+body{
+    background-color:rgb(102, 170, 202);
+    font-family: 'Rubik', sans-serif;
+
+    main{
+        margin:auto;
+    
+        h1{
+            text-align:center;
+        }
+
+        form{
+
+            input[type=text]{
+                width:100%;
+                margin-bottom:10px;
+            
+                border:none;
+                border-radius:10px;
+                padding-left:10px;
+                background-color:rgb(206, 225, 233);
+            }
+            
+            input[type=submit]{
+                width:100%;
+            
+                border:none;
+                border-radius:10px;
+                background-color:rgb(206, 225, 233);
+                font-family: 'Rubik', sans-serif;
+            }
+            
+            input:hover{
+                background-color:rgb(255, 255, 255);
+            }
+            
+            input[type=submit]:hover{
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+
+
+
+
