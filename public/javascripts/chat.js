@@ -20,9 +20,6 @@ form.addEventListener('submit', function(e){
         input.value = '';
     }
 
-    setTimeout(() => {
-        chat.scrollTop = chat.scrollHeight;
-    }, 100);
 });
 
 
@@ -33,4 +30,8 @@ socket.on('message', function(msg){
         chat.insertAdjacentHTML('beforeend', '<p><b>' + user.username + ': </b>' + msg.text + '</p>');
     }
     
+
+    setTimeout(() => {
+        chat.scrollTop = chat.scrollHeight;
+    }, 100);
 });
