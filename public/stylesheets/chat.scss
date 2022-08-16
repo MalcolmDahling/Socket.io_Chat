@@ -13,10 +13,14 @@
             flex-flow:column;
             gap:30px;
 
-            #chat{
-                flex-basis:100%;
-                font-size:3rem;
-            }
+
+            #chatOuter{
+
+                #chatInner{
+                    flex-basis:100%;
+                    font-size:3rem;
+                }
+            }      
 
             form{
                 margin:0px;
@@ -42,10 +46,14 @@
         width:50%;
         margin:auto;
 
-        #chat{
-            height:200px;
+        #chatOuter{
             margin-bottom:10px;
-        }
+
+            #chatInner{
+                height:200px;
+                
+            }
+        } 
 
         form{
 
@@ -72,24 +80,40 @@ body{
         h1{
             text-align:center;
         }
+
+        #chatOuter{
+            position:relative;
+
+            #chatInner{
+                padding:10px;
+                overflow-wrap:break-word;
+                overflow-y:scroll;
+            
+                border-radius:10px;
+                background-color:rgb(206, 225, 233);
+                padding-bottom:30px;
+            
+                p{
+                    padding:0px;
+                    margin:0px;
+                }
     
-        #chat{
-            padding:10px;
-            overflow-wrap:break-word;
-            overflow-y:scroll;
-        
-            border-radius:10px;
-            background-color:rgb(206, 225, 233);
-        
-            p{
-                padding:0px;
-                margin:0px;
+                .ownMessage{
+                    color:rgb(0, 117, 196)
+                }  
             }
 
-            .ownMessage{
-                color:rgb(0, 117, 196)
+            #isTyping{
+                position:absolute;
+                left:10px;
+                bottom:10px;
+                margin:0px;
+                padding:0px;
+
+                display:none;
             }
         }
+        
     
         form{
     

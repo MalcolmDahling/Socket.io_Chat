@@ -18,3 +18,7 @@ form.addEventListener('submit', (e) => {
 
 });
 
+
+socket.on('open rooms', function(openRooms){
+    console.log(openRooms);
+})

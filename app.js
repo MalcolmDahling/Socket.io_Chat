@@ -24,16 +24,35 @@ app.use('/chat/:room', chatRouter);
 
 
 io.on('connection', function(socket){
-    console.log('User Connected.');
+
+    console.log('User Connected');
+
+
+    socket.on('join', function(room){
+        socket.join(room);
+        console.log('User connected to room: ' + room);
+        
+        // let openRooms = Array.from(io.sockets.adapter.rooms);
+        // console.log( openRooms );
+        // io.emit('open rooms', );
+    });
+
 
     socket.on('disconnect', function(){
-        console.log('User Disconnected.');
+        console.log('User Disconnected');
     });
+
 
     socket.on('message', function(msg){
         console.log(msg);
-        io.emit('message', msg)
+        io.to(msg.room).emit('message', msg)
     });
+
+
+    socket.on('isTyping', function(isTyping){
+        io.to(isTyping.room).emit('isTyping', isTyping);
+    });
+
 });
 
 
