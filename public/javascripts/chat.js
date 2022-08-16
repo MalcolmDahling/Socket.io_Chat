@@ -79,10 +79,10 @@ socket.on('isTyping', function(isTyping){
 
 
         if(usersWhoAreTyping.length == 0){
-            document.getElementById('isTyping').style.display = 'none';
+            document.getElementById('isTyping').style.visibility = 'hidden';
         }
         else{
-            document.getElementById('isTyping').style.display = 'block';
+            document.getElementById('isTyping').style.visibility = 'visible';
         }
 
 

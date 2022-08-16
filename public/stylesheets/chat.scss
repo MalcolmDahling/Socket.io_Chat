@@ -4,14 +4,16 @@
         font-size:1.5rem;
 
         main{
+            display:flex;
+            flex-direction:column;
+            gap:10px;
+
             height:100%;
             width:100%;
             padding:10px;
             box-sizing:border-box;
 
-            display:flex;
-            flex-flow:column;
-            gap:20px;
+            
 
 
             h1{
@@ -21,12 +23,13 @@
 
 
             #chatOuter{
-                flex-basis:100%;
-                font-size:1.5rem;
+                display:flex;
+                flex-direction:column;
+                flex-grow:1;
 
+                
                 #chat{
-                    
-                    height:100%;   
+                    flex-basis:100%;
                 }
             }
             
@@ -34,10 +37,9 @@
 
             form{
                 margin:0px;
-
                 display:flex;
-                flex-flow:column;
-                gap:20px;
+                flex-direction:column;
+                gap:10px;
 
                 input{
                     height:60px;
@@ -84,6 +86,8 @@
 
 
 
+
+
 body{
     background-color:rgb(102, 170, 202);
     font-family: 'Rubik', sans-serif;
@@ -96,15 +100,14 @@ body{
         }
 
         #chatOuter{
-            position:relative;
+            padding:10px;
+            overflow:hidden;
 
             border-radius:10px;
             background-color:rgb(206, 225, 233);
 
             #chat{
-                padding:10px;
                 overflow-y:scroll;
-                padding-bottom:30px;
                 overflow-wrap:break-word;
                 box-sizing:border-box;
 
@@ -112,21 +115,29 @@ body{
                     padding:0px;
                     margin:0px;
                 }
-    
+
                 .ownMessage{
                     color:rgb(0, 117, 196)
-                }  
+                } 
             }
+
+            ::-webkit-scrollbar {
+                width: 12px;
+                background-color:rgb(160, 192, 207);
+                border-radius:10px;
+            }
+              
+            ::-webkit-scrollbar-thumb {
+                background:rgb(102, 170, 202);
+                border-radius:10px;
+            }
+
 
             #isTyping{
-                position:absolute;
-                left:10px;
-                bottom:10px;
                 margin:0px;
-                padding:0px;
-
-                display:none;
+                visibility:hidden;
             }
+
         }
         
         
