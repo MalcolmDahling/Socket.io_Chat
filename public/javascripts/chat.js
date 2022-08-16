@@ -1,6 +1,6 @@
 const socket = io();
 
-chat = document.getElementById('chatInner');
+chat = document.getElementById('chat');
 form = document.getElementById('form');
 input = document.getElementById('input');
 
@@ -39,6 +39,7 @@ socket.on('message', function(msg){
     }
          
     chat.scrollTop = chat.scrollHeight;
+
 });
 
 

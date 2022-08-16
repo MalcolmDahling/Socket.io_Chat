@@ -1,37 +1,47 @@
 //mobile
 @media only screen and (max-width:999px){
     body{
-        font-size:2rem;
+        font-size:1.5rem;
 
         main{
             height:100%;
             width:100%;
-            padding:30px;
+            padding:10px;
             box-sizing:border-box;
 
             display:flex;
             flex-flow:column;
-            gap:30px;
+            gap:20px;
+
+
+            h1{
+                margin:0px;
+                font-size:2rem;
+            }
 
 
             #chatOuter{
+                flex-basis:100%;
+                font-size:1.5rem;
 
-                #chatInner{
-                    flex-basis:100%;
-                    font-size:3rem;
+                #chat{
+                    
+                    height:100%;   
                 }
-            }      
+            }
+            
+                 
 
             form{
                 margin:0px;
 
                 display:flex;
                 flex-flow:column;
-                gap:30px;
+                gap:20px;
 
                 input{
-                    height:100px;
-                    font-size:3rem;
+                    height:60px;
+                    font-size:1.5rem;
                 }
             }
         }
@@ -46,14 +56,18 @@
         width:50%;
         margin:auto;
 
+
         #chatOuter{
             margin-bottom:10px;
 
-            #chatInner{
+            #chat{
+                
                 height:200px;
                 
             }
-        } 
+        }
+        
+ 
 
         form{
 
@@ -84,15 +98,16 @@ body{
         #chatOuter{
             position:relative;
 
-            #chatInner{
+            border-radius:10px;
+            background-color:rgb(206, 225, 233);
+
+            #chat{
                 padding:10px;
-                overflow-wrap:break-word;
                 overflow-y:scroll;
-            
-                border-radius:10px;
-                background-color:rgb(206, 225, 233);
                 padding-bottom:30px;
-            
+                overflow-wrap:break-word;
+                box-sizing:border-box;
+
                 p{
                     padding:0px;
                     margin:0px;
@@ -113,6 +128,7 @@ body{
                 display:none;
             }
         }
+        
         
     
         form{
