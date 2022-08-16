@@ -27,7 +27,15 @@ form.addEventListener('submit', function(e){
 socket.on('message', function(msg){
 
     if(msg.room == room){
-        chat.insertAdjacentHTML('beforeend', '<p><b>' + msg.username + ': </b>' + msg.text + '</p>');
+
+        if(msg.username == username){
+            chat.insertAdjacentHTML('beforeend', '<p><b><span class="ownMessage">' + msg.username + ':</span> </b>' + msg.text + '</p>');
+        }
+
+        else{
+            chat.insertAdjacentHTML('beforeend', '<p><b>' + msg.username + ': </b>' + msg.text + '</p>');
+        }
+        
     }
     
     chat.scrollTop = chat.scrollHeight;
