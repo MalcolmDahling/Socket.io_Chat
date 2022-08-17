@@ -101,10 +101,12 @@ body{
 
         #chatOuter{
             padding:10px;
+            margin-bottom:15px;
             overflow:hidden;
 
             border-radius:10px;
             background-color:rgb(206, 225, 233);
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
 
             #chat{
                 overflow-y:scroll;
@@ -146,20 +148,23 @@ body{
     
             input[type=text]{
                 width:100%;
+                margin-bottom:15px;
             
                 border:none;
                 border-radius:10px;
                 padding-left:10px;
                 background-color:rgb(206, 225, 233);
+                box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
             }
             
             input[type=submit]{
-                width:100%;
+                width:100px;
             
                 border:none;
                 border-radius:10px;
                 background-color:rgb(206, 225, 233);
                 font-family: 'Rubik', sans-serif;
+                box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
             }
             
             

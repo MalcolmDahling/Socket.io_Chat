@@ -27,17 +27,20 @@ io.on('connection', function(socket){
 
     console.log('User Connected');
 
+    io.emit('active rooms', getActiveRooms(io));
+
 
     socket.on('join', function(room){
         socket.join(room);
         console.log('User connected to room: ' + room);
 
-        console.log(getActiveRooms(io));
+        io.emit('active rooms', getActiveRooms(io));
     });
 
 
     socket.on('disconnect', function(){
         console.log('User Disconnected');
+        io.emit('active rooms', getActiveRooms(io));
     });
 
 
