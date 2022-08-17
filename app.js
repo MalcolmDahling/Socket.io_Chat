@@ -49,7 +49,6 @@ io.on('connection', function(socket){
 
     socket.on('isTyping', function(isTyping){
         io.to(isTyping.room).emit('isTyping', isTyping);
-        console.log(isTyping);
     });
 
 });
