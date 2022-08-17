@@ -41,14 +41,15 @@ io.on('connection', function(socket){
     });
 
 
-    socket.on('message', function(msg){
+    socket.on('message', function(msg){;
         console.log(msg);
-        io.to(msg.room).emit('message', msg)
+        io.to(msg.room).emit('message', msg);
     });
 
 
     socket.on('isTyping', function(isTyping){
         io.to(isTyping.room).emit('isTyping', isTyping);
+        console.log(isTyping);
     });
 
 });

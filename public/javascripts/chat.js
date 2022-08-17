@@ -92,12 +92,11 @@ socket.on('isTyping', function(isTyping){
 
 
         for(let i = 0; i < usersWhoAreTyping.length; i++){
-
-            isTypingSpan.insertAdjacentHTML('beforeend', usersWhoAreTyping[i] + ', '); 
+            isTypingSpan.insertAdjacentHTML('beforeend', usersWhoAreTyping[i] + ', ');
         }
 
 
-        isTypingSpan.innerText = isTypingSpan.innerText.slice(0, -2) //remove last comma and space
+        isTypingSpan.innerText = isTypingSpan.innerText.slice(0, -2); //remove last comma and space
         
     }
 });
