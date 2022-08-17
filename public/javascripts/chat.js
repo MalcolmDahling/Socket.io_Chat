@@ -9,7 +9,7 @@ let username = JSON.parse(localStorage.getItem('username'));
 
 socket.emit('join', room);
 
-document.getElementById('title').innerHTML = 'You are currently chatting in room: ' + decodeURIComponent(room);
+document.getElementById('title').innerHTML = 'Chatroom: ' + decodeURIComponent(room);
 
 
 

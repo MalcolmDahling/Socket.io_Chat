@@ -21,6 +21,7 @@
 
                 input[type=submit]{
                     margin-top:53px;
+                    width:200px;
                 }
             }
         }
@@ -44,6 +45,7 @@
 
             input[type=submit]{
                 margin-top:20px;
+                width:100px;
             }
         }
     }
@@ -77,12 +79,11 @@ body{
             }
             
             input[type=submit]{
-                width:100px;
-            
                 border:none;
                 border-radius:10px;
                 background-color:rgb(206, 225, 233);
-                font-family: 'Rubik', sans-serif;
+                font-family:'Rubik', sans-serif;
+                font-weight:bold;
                 box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
             }
             

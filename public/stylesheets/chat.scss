@@ -15,6 +15,10 @@
 
             
 
+            a{
+                margin-bottom:10px;
+            }
+
 
             h1{
                 margin:0px;
@@ -57,6 +61,13 @@
     main{
         width:50%;
         margin:auto;
+        position:relative;
+
+        a{
+            position:absolute;
+            top:60px;
+            left:-64px;
+        }
 
 
         #chatOuter{
@@ -64,7 +75,7 @@
 
             #chat{
                 
-                height:200px;
+                height:400px;
                 
             }
         }
@@ -94,6 +105,20 @@ body{
 
     main{
         margin:auto;
+
+        a{
+            width:48px;
+            height:48px;
+
+            border-radius:10px;
+            background-image:url('/images/arrowBack.png');
+            background-color:rgb(206, 225, 233);
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
+        }
+
+        a:hover{
+            background-color:rgb(255, 255, 255);
+        }
 
         h1{
             text-align:center;
@@ -163,7 +188,8 @@ body{
                 border:none;
                 border-radius:10px;
                 background-color:rgb(206, 225, 233);
-                font-family: 'Rubik', sans-serif;
+                font-family:'Rubik', sans-serif;
+                font-weight:bold;
                 box-shadow:5px 5px 5px rgba(0, 0, 0, 0.250);
             }
             
@@ -178,4 +204,6 @@ body{
         }
     }    
 }
+
+
 
